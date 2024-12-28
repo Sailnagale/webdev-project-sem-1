@@ -1,22 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("loginForm");
 
+  // Store credentials locally in an array
+  let users = [{ username: "admin", password: "password123" }];
+
   loginForm.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the default form submission
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    // Perform basic validation
-    if (username === "" || password === "") {
-      alert("Please fill in both fields.");
-      return;
-    }
+    // Validate login credentials
+    const user = users.find(
+      (user) => user.username === username && user.password === password
+    );
 
-    // Simulate a login action (this is just for demonstration)
-    if (username === "admin" && password === "password123") {
+    if (user) {
       alert("Login successful!");
-      window.location.href = "dashboard.html"; // Redirect to a dashboard page
+      window.location.href = "index.html"; // Redirect to the home page
     } else {
       alert("Invalid username or password.");
     }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GST Registration - Government of India</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="registration.html">Registration</a></li>
+
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>GST Registration</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Register for GST</h2>
+        <form action="submit_registration.php" method="POST">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="dob">Date of Birth:</label><br />
+          <input type="date" id="dob" name="dob" required /><br />
+
+          <label for="business_type">Business Type:</label><br />
+          <input
+            type="text"
+            id="business_type"
+            name="business_type"
+            required
+          /><br />
+
+          <input type="submit" value="Register" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Government of India. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

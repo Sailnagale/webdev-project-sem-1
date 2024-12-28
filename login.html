@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GST Login - Government of India</title>
+    <link rel="stylesheet" href="login.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="registration.html">Registration</a></li>
+
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>GST Login</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Login to your account</h2>
+        <form id="loginForm" action="submit_login.php" method="POST">
+          <label for="username">Username:</label><br />
+          <input type="text" id="username" name="username" required /><br />
+
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" required /><br />
+
+          <input type="submit" value="Login" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Government of India. All rights reserved.</p>
+    </footer>
+    <script src="login.js"></script>
+  </body>
+</html>
